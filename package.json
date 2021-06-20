@@ -1,0 +1,24 @@
+{
+  "name": "monorepo-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "web:start": "yarn workspace @monorepo-blog/web start"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "packages/shared/*"
+    ]
+  },
+  "author": "Pedro H <ph.luna.vieira@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@monorepo-blog/axios": "*"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.4",
+    "@monorepo-blog/eslint": "*"
+  }
+}
