@@ -22,6 +22,9 @@ module.exports = {
   ],
   rules: {
     'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': ['error']
+    '@typescript-eslint/no-use-before-define': ['error'],
+    indent: 'off',
+    '@typescript-eslint/indent': ['error', 2],
+    'space-before-function-paren': ['error', 'never']
   }
 }

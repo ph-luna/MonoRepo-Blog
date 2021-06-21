@@ -4,7 +4,8 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "web:start": "yarn workspace @monorepo-blog/web start"
+    "web:dev": "yarn workspace @monorepo-blog/web start",
+    "server:dev": "yarn workspace @monorepo-blog/server start"
   },
   "workspaces": {
     "packages": [
