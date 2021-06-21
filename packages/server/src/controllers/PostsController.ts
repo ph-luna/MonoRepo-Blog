@@ -4,7 +4,7 @@ import Posts from '@models/PostSchema'
 import Users from '@models/UserSchema'
 import Companies from '@models/CompanySchema'
 
-import ServerError from 'src/errors/ServerError'
+import ServerError from '../errors/ServerError'
 
 const postsRouter = Router()
 

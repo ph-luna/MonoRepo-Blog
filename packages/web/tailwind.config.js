@@ -1,7 +1,7 @@
 module.exports = {
   purge: [
-    './src/*.{js,ts,jsx,tsx}',
-    './public/index.html'
+    // './src/styles.css'
+    './dist/bundle.js'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {

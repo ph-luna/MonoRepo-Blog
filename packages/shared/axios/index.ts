@@ -1,9 +1,13 @@
-import axios from 'axios'
+const axios = require('axios')
 
-export const api = axios.create({
+const api = axios.create({
   baseURL: 'http://localhost:7777'
 })
 
-export const jsonPlaceHolderAPI = axios.create({
+const jsonPlaceHolderAPI = axios.create({
   baseURL: 'http://jsonplaceholder.typicode.com'
 })
+
+module.exports = {
+  api, jsonPlaceHolderAPI
+}

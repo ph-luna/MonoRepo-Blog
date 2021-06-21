@@ -6,10 +6,5 @@ module.exports = {
     '@babel/preset-env',
     '@babel/preset-react',
     '@babel/preset-typescript'
-  ],
-  env: {
-    production: {
-      presets: ['react-optimize']
-    }
-  }
+  ]
 }
