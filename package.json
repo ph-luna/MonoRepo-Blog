@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "web:dev": "yarn workspace @monorepo-blog/web start",
+    "web:build": "yarn workspace @monorepo-blog/web build",
     "server:dev": "yarn workspace @monorepo-blog/server start"
   },
   "workspaces": {

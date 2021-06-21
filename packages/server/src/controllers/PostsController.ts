@@ -41,7 +41,27 @@ postsRouter.get('/', async(req: Request, res: Response) => {
 
   const posts = await Posts.find()
 
-  return res.json({ posts })
+  const responsePosts = await Promise.all(posts.map(async post => {
+    const user = await Users.findById(post.userId)
+
+    if (user) {
+      const company = await Companies.findById(user.companyId)
+
+      if (company) {
+        return {
+          title: post.title,
+          body: post.body,
+          author: {
+            username: user.username,
+            name: user.name,
+            company: company.name
+          }
+        }
+      }
+    }
+  }))
+
+  return res.json({ responsePosts })
 })
 
 export default postsRouter

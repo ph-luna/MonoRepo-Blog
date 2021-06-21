@@ -20,6 +20,7 @@ module.exports = {
     'react',
     '@typescript-eslint'
   ],
+  ignorePatterns: ['**/dist/**'],
   rules: {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],

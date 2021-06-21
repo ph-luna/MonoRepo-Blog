@@ -1,3 +1,3 @@
-const config = require('@monorepo-blog/eslint');
+const config = require('@monorepo-blog/eslint')
 
-module.exports = config;
+module.exports = config
