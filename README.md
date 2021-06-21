@@ -15,7 +15,7 @@ yarn web:dev
 
 A versão otimizada fica salva na pasta **/dist** em cada subprojeto.
 
-Lembrando que como o projeto utiliza o **Yarn** como gerenciador de pacotes é necessário utilizar o comando "yarn" na pasta raiz pro projeto para carregar todas as dependências de ambos os subprojetos e claro ter o yarn configurado em seu sistema.
+Lembrando que como o projeto utiliza o **Yarn** como gerenciador de pacotes é necessário utilizar o comando "yarn" na pasta raiz do projeto para carregar todas as dependências de ambos os subprojetos e claro ter o yarn configurado em seu sistema.
 
 ## Info
 
